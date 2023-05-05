@@ -25,7 +25,7 @@ Sie können die JSON-Dateien in Ihren Anwendungen abrufen und verarbeiten, indem
 ```javascript
 const getHolidays = async (year) => {
   try {
-    const response = await fetch(`https://devsaur.github.io/feiertage-api-backup/holidays/holidays_${year}.json`);
+    const response = await fetch(`https://devsaur.github.io/feiertage-api-backup/holidays_${year}.json`);
     if (response.ok) {
       const holidays = await response.json();
       console.log(holidays);
