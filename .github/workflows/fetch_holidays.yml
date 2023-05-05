@@ -3,7 +3,7 @@ name: Fetch Holidays
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 1 1 *'
+    - cron: '0 0 * * 0'
 
 jobs:
   fetch_holidays:
