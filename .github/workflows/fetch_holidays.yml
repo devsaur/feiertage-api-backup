@@ -24,6 +24,12 @@ jobs:
           pip install requests
       - name: Fetch and save holidays
         run: python fetch_holidays.py
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "github-actions-bot@example.com"
+          git add holidays/*.json
+          git diff --cached --quiet || git commit -m "Update holidays data" && git push
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
