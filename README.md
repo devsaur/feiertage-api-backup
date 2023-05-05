@@ -11,13 +11,13 @@ Dieses Repository enthält ein Backup der deutschen Feiertage von 2010 bis zum a
 Sobald die JSON-Dateien über GitHub Pages bereitgestellt sind, können Sie direkt auf sie zugreifen und sie in Ihren Anwendungen oder Projekten verwenden. Die JSON-Dateien sind unter folgender URL-Struktur verfügbar:
 
 ```
-https://devsaur.github.io/feiertage-api-backup/holidays/holidays_<Jahr>.json
+https://devsaur.github.io/feiertage-api-backup/holidays_<Jahr>.json
 ```
 
 Ersetzen Sie `<Jahr>` durch das gewünschte Jahr, um die Feiertage für dieses Jahr abzurufen. Zum Beispiel, um die Feiertage für das Jahr 2022 abzurufen, verwenden Sie die folgende URL:
 
 ```
-https://devsaur.github.io/feiertage-api-backup/holidays/holidays_2022.json
+https://devsaur.github.io/feiertage-api-backup/holidays_2022.json
 ```
 
 Sie können die JSON-Dateien in Ihren Anwendungen abrufen und verarbeiten, indem Sie HTTP-Anfragen an die entsprechende URL senden. Hier ist ein Beispiel, wie Sie dies in JavaScript tun können:
